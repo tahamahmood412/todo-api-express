@@ -1,0 +1,145 @@
+{
+	"info": {
+		"_postman_id": "0b1d5bf5-e71c-4464-8d64-bec95c648f88",
+		"name": "Todo apis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29309525"
+	},
+	"item": [
+		{
+			"name": "homepage",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create Todo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"satluj website h\",\r\n    \"description\":\"urgent task h\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/createTodo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"createTodo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all todos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/getTodos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"getTodos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get todo by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/getTodos/67daf9aa6bbf47c46ff39bd0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"getTodos",
+						"67daf9aa6bbf47c46ff39bd0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update a todo by id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"homework no 2\",\r\n    \"description\": \"description of homework 2\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/updateTodo/67daf9aa6bbf47c46ff39bd0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"updateTodo",
+						"67daf9aa6bbf47c46ff39bd0"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
