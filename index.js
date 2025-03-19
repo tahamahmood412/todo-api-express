@@ -27,7 +27,7 @@ dbConnect();
 
 //default route for homepage
 app.get("/",(req,res)=>{
-    res.send(`<h1>This is homepage </h1>`)
+    res.send(`<h1>This is todo api homepage</h1>`)
 })
 
 
